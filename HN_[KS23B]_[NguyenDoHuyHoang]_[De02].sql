@@ -220,7 +220,7 @@ AFTER INSERT ON Booking
 FOR EACH ROW
 BEGIN
     UPDATE Room
-    SET room_status = 'Đã đặt'
+    SET room_status = 'Booked'
     WHERE room_id = NEW.room_id;
 END;//
 DELIMITER ;
